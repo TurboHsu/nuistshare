@@ -12,7 +12,7 @@ onBeforeMount(async () => {
   if (host === 'nuistshare.cn')
     location.href = 'https://www.nuistshare.cn'
 
-  if (protocol === 'http:' && ! host.includes('localhost'))
+  if (protocol === 'http:' && !host.includes('localhost'))
     location.href = `https://${host}`
 
   const login = useLogin()

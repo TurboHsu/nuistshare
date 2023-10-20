@@ -50,10 +50,10 @@ const metadata = computed(() => {
       <div v-for="i in metadata" :key="i.value" class=" flex flex-col sm:flex-row bg-white drop-shadow hover:shadow transition-all p-3 px-6 my-3 rounded-xl flex justify-between items-center">
         <p>源：{{ i.label }}</p>
         <TSpace>
-          <TButton variant="outline" tag="a" :href="`https://api-nuistshare.dustella.net/api/download?metadata_id=${i.value}`" download rel="noopener noreferrer" >
+          <TButton variant="outline" tag="a" :href="`https://api-nuistshare.dustella.net/api/download?metadata_id=${i.value}`" download rel="noopener noreferrer">
             预览
           </TButton>
-          <TButton tag="a" :href="`https://api-nuistshare.dustella.net/api/download?metadata_id=${i.value}`" download rel="noopener noreferrer" >
+          <TButton tag="a" :href="`https://api-nuistshare.dustella.net/api/download?metadata_id=${i.value}`" download rel="noopener noreferrer">
             下载
           </TButton>
         </TSpace>
